@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilemas Digitais & Soluções</title>
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Estilo do Projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- AVISO DE ACESSIBILIDADE PARA LEITORES DE TELA -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO COM CONTROLES DE ACESSIBILIDADE -->
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <i data-lucide="shield-alert" aria-hidden="true"></i>
+                <span>Dilemas<b>Digitais</b></span>
+            </div>
+
+            <nav aria-label="Navegação Principal">
+                <ul class="nav-links">
+                    <li><a href="#dilemas">Dilemas</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#quiz">Quiz Interativo</a></li>
+                </ul>
+            </nav>
+
+            <!-- BARRAS DE FERRAMENTAS DE ACESSIBILIDADE -->
+            <div class="accessibility-toolbar" aria-label="Ferramentas de Acessibilidade">
+                <button id="btn-theme" title="Alternar Modo Escuro/Claro" aria-label="Alternar Tema Claro e Escuro">
+                    <i data-lucide="moon" id="theme-icon" aria-hidden="true"></i>
+                </button>
+                <div class="font-controls">
+                    <button id="btn-decrease-font" title="Diminuir tamanho da fonte" aria-label="Diminuir Tamanho da Fonte">
+                        <i data-lucide="minus" aria-hidden="true"></i> A-
+                    </button>
+                    <button id="btn-reset-font" title="Restaurar tamanho da fonte" aria-label="Restaurar Tamanho da Fonte Padrão">
+                        <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+                    </button>
+                    <button id="btn-increase-font" title="Aumentar tamanho da fonte" aria-label="Aumentar Tamanho da Fonte">
+                        <i data-lucide="plus" aria-hidden="true"></i> A+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="main-content" tabIndex="-1">
+        
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Navegando pelos Dilemas da Era Digital</h1>
+            <p>Conectividade constante, redes sociais e inteligência artificial trouxeram avanços incríveis, mas também novos desafios éticos e comportamentais. Saiba como identificar e superar esses dilemas com soluções práticas.</p>
+        </section>
+
+        <!-- SEÇÃO DE DILEMAS -->
+        <section id="dilemas">
+            <div class="section-title">
+                <h2>Os Principais Dilemas Digitais</h2>
+                <p>Desafios contemporâneos vivenciados por bilhões de pessoas diariamente.</p>
+            </div>
+
+            <div class="grid">
+                <!-- Dilema 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Pessoa utilizando o celular no escuro, representando privacidade e excesso de telas." class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">Privacidade & Dados</span>
+                        <h3 class="card-title">Vigilância Passiva e Coleta de Dados</h3>
+                        <p>Nossos passos virtuais são rastreados continuamente. A linha entre a conveniência dos algoritmos recomendadores e a invasão de privacidade tornou-se quase invisível.</p>
+                    </div>
+                </article>
+
+                <!-- Dilema 2 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Lupa sobre telas com dados, ilustrando desinformação e fake news." class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">Sociedade & Informação</span>
+                        <h3 class="card-title">Desinformação e Bolhas de Bolha</h3>
+                        <p>Algoritmos desenhados para maximizar engajamento frequentemente priorizam sensacionalismo em vez da verdade, criando bolhas ideológicas e espalhando fakenews.</p>
+                    </div>
+                </article>
+
+                <!-- Dilema 3 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Pessoa em um momento de pausa, meditando ao ar livre para desconectar." class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">Saúde Mental</span>
+                        <h3 class="card-title">Vício em Telas e Hiperconectividade</h3>
+                        <p>A notificação constante ativa circuitos de dopamina que dificultam o foco, prejudicam o sono e aumentam taxas de ansiedade e depressão entre jovens e adultos.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SOLUÇÕES -->
+        <section id="solucoes" class="solutions-section">
+            <div class="solutions-container">
+                <div class="section-title">
+                    <h2>Caminhos e Soluções Práticas</h2>
+                    <p>Atitudes conscientes para retomar o controle da sua vida digital.</p>
+                </div>
+
+                <div class="grid">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <i data-lucide="lock" aria-hidden="true"></i>
+                            <h3>Higiene de Privacidade</h3>
+                        </div>
+                        <p>Utilize gerenciadores de senhas, ative a autenticação em duas etapas (2FA) e revise periodicamente as permissões de aplicativos no seu smartphone.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                            <h3>Checagem de Fatos</h3>
+                        </div>
+                        <p>Antes de compartilhar, verifique a fonte original. Busque informações em portais de jornalismo profissional e agências neutras de verificação.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <i data-lucide="clock" aria-hidden="true"></i>
+                            <h3>Detox Digital & Limites</h3>
+                        </div>
+                        <p>Estabeleça zonas livres de tecnologia (como a mesa de refeições e o quarto) e defina horários rígidos para desligar telas antes de dormir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DO QUIZ -->
+        <section id="quiz">
+            <div class="section-title">
+                <h2>Quiz: Qual o seu nível de Saúde Digital?</h2>
+                <p>Responda às perguntas abaixo para descobrir como está sua relação com a tecnologia.</p>
+            </div>
+
+            <div class="quiz-container" id="quiz-box">
+                <div id="quiz-screen">
+                    <div class="quiz-progress" id="quiz-progress">Pergunta 1 de 3</div>
+                    <h3 class="quiz-question" id="quiz-question">Carregando pergunta...</h3>
+                    <div class="quiz-options" id="quiz-options">
+                        <!-- Opções injetadas via Javascript -->
+                    </div>
+                </div>
+
+                <div id="result-screen" class="quiz-result" style="display: none;">
+                    <i data-lucide="award" style="width: 60px; height: 60px; color: var(--accent-color);" aria-hidden="true"></i>
+                    <h3 id="result-title">Seu Resultado</h3>
+                    <p id="result-desc"></p>
+                    <button class="btn-restart" id="btn-restart">
+                        <i data-lucide="rotate-ccw" aria-hidden="true"></i> Refazer Quiz
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <i data-lucide="shield-alert" aria-hidden="true"></i>
+                    <span>Dilemas<b>Digitais</b></span>
+                </div>
+                <p>Promovendo a conscientização, segurança e bem-estar no uso das tecnologias modernas.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#dilemas">Dilemas</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#quiz">Quiz de Avaliação</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Acessibilidade</h4>
+                <p>Este site atende a diretrizes de acessibilidade com suporte a alto contraste, ajuste dinâmico de texto e leitura facilitada.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dilemas Digitais. Todos os direitos reservados. Projeto Educativo.</p>
+        </div>
+    </footer>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
